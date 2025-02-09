@@ -13,7 +13,7 @@ export function loadWildfireData() {
                 // Add polygon fill layer for detailed data (initially hidden)
                 map.addLayer({
                     id: 'detailed-polygon-layer', type: 'fill', source: 'detailed-geojson-data', paint: {
-                        'fill-color': '#FF5733', 'fill-opacity': 0.5
+                        'fill-color': '#C73E1D', 'fill-opacity': 0.5
                     }, layout: {
                         'visibility': 'none'
                     }
@@ -22,7 +22,7 @@ export function loadWildfireData() {
                 // Add polygon outline layer for detailed data (initially hidden)
                 map.addLayer({
                     id: 'detailed-polygon-outline', type: 'line', source: 'detailed-geojson-data', paint: {
-                        'line-color': '#FF5733', 'line-width': 1
+                        'line-color': '#C73E1D', 'line-width': 1
                     }, layout: {
                         'visibility': 'none'
                     }

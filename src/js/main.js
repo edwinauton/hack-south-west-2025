@@ -6,14 +6,12 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZWE5OTQiLCJhIjoiY202d280MzVrMGdwbTJpc2t6dzN2Y
 
 export const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v12',
+    style: 'mapbox://styles/ea994/cm6xctf2s019y01qr0h2b417s',
     center: [-118.5, 36.5],
     zoom: 6,
     pitch: 30,
     bearing: 16
 });
-
-//366.119/-118.325/16.8/48
 
 export function calculateLoss(damage, value) {
     const damageMap = {
