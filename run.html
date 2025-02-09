@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HSW 2025</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div id="map"></div>
+    <div class="box">
+        <h2 class="title">Map Controls</h2>
+        <div class="toggle-container">
+            <label class="toggle">
+                <input type="checkbox" id="wildfireToggle">
+                <span>Toggle Wildfire Overlay</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="financialToggle">
+                <span>Toggle Financial Data</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="miscToggle">
+                <span>Toggle Miscellaneous Data</span>
+            </label>
+        </div>
+    </div>
+</div>
+<script src="src/js/main.js" type="module"></script>
+</body>
+</html>
