@@ -35,7 +35,7 @@ export function loadFinancialData() {
                 }, layout: {
                     'visibility': 'none'
                 }
-            });
+            }, 'miscDataLayer');
 
             // Handle point clicks for popups
             map.on('click', 'financialDataLayer', event => {

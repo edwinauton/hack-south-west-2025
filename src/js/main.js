@@ -36,8 +36,8 @@ export function getDamageColor(damageLevel) {
 }
 
 async function main() {
-    loadFinancialData();
     loadMiscData();
+    loadFinancialData();
     loadWildfireData();
 
     document.getElementById('wildfireToggle').addEventListener('change', function () {

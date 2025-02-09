@@ -17,7 +17,7 @@ export function loadWildfireData() {
                     }, layout: {
                         'visibility': 'none'
                     }
-                });
+                }, 'financialDataLayer');
 
                 // Add polygon outline layer for detailed data (initially hidden)
                 map.addLayer({
@@ -26,7 +26,7 @@ export function loadWildfireData() {
                     }, layout: {
                         'visibility': 'none'
                     }
-                });
+                }, 'financialDataLayer');
             })
     });
 }
