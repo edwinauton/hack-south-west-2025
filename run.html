@@ -11,20 +11,26 @@
     <div id="map"></div>
     <div class="box">
         <h2 class="title">Map Controls</h2>
+
         <div class="toggle-container">
+            <div class="switch-wrapper">
+                <label for="dataSlider" class="switch">
+                    <input type="checkbox" id="dataSlider"/>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <label class="toggle">
+                <input type="checkbox" id="dataToggle">
+                <span>Toggle Data Points</span>
+            </label>
+
             <label class="toggle">
                 <input type="checkbox" id="wildfireToggle">
                 <span>Toggle Wildfire Overlay</span>
             </label>
-            <label class="toggle">
-                <input type="checkbox" id="financialToggle">
-                <span>Toggle Financial Data</span>
-            </label>
-            <label class="toggle">
-                <input type="checkbox" id="miscToggle">
-                <span>Toggle Miscellaneous Data</span>
-            </label>
         </div>
+
     </div>
 </div>
 <script src="src/js/main.js" type="module"></script>

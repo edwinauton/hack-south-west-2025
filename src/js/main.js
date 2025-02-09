@@ -36,9 +36,9 @@ export function getDamageColor(damageLevel) {
 }
 
 async function main() {
-    loadWildfireData();
     loadFinancialData();
     loadMiscData();
+    loadWildfireData();
 
     document.getElementById('wildfireToggle').addEventListener('change', function () {
         if (this.checked) {
@@ -47,19 +47,30 @@ async function main() {
             hideWildfireData();
         }
     });
-    document.getElementById('financialToggle').addEventListener('change', function () {
+    document.getElementById('dataSlider').addEventListener('change', function () {
         if (this.checked) {
-            showFinancialData();
-        } else {
             hideFinancialData();
-        }
-    });
-    document.getElementById('miscToggle').addEventListener('change', function () {
-        if (this.checked) {
             showMiscData();
         } else {
             hideMiscData();
+            showFinancialData();
         }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const dataToggleWrapper = document.querySelector('.switch-wrapper');
+
+        // Set up an event listener for the wildfireToggle checkbox
+        document.getElementById('dataToggle').addEventListener('change', function () {
+            if (this.checked) {
+                dataToggleWrapper.style.display = 'block';
+                hideMiscData();
+                showFinancialData();
+            } else {
+                dataToggleWrapper.style.display = 'none';
+                hideFinancialData();
+                hideMiscData();
+            }
+        });
     });
 }
 

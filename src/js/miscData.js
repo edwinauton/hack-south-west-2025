@@ -30,7 +30,7 @@ export function loadMiscData() {
             });
 
             // Handle clicks to show popups
-            map.on('click', 'pointsLayer1', event => {
+            map.on('click', 'miscDataLayer', event => {
                 const feature = event.features[0].properties;
                 const popupContent = `
                     <strong>Year Built:</strong> ${feature.YEARBUILT || "N/A"}<br>

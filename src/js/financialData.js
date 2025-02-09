@@ -44,7 +44,7 @@ export function loadFinancialData() {
                     const popupContent = `
                     <strong>Value:</strong> $${feature.ASSESSEDIMPROVEDVALUE || "N/A"}<br>
                     <strong>Damage Level:</strong> ${feature.DAMAGE || "N/A"}<br>
-                    <strong>Estimated Loss:</strong> $${feature.Loss || "N/A"}
+                    <strong>Estimated Loss:</strong> $${feature.Loss.toFixed(0) || "N/A"}
                 `; // Default to 'N/A' if no value found
                     new mapboxgl.Popup()
                         .setLngLat(event.lngLat)
